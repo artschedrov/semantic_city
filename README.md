@@ -17,6 +17,9 @@
 Полученные результаты метрик на тестовой выборке:
 ![image](./docs/table.png)
 
+Демонстрация распознавания:
+![image](./docs/preview.gif)
+
 ## Установка и запуск
 ` pip install -r requirements.txt`
 
