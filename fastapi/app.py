@@ -5,11 +5,13 @@ import torch
 import segmentation_models_pytorch as smp
 import numpy as np
 from PIL import Image
+import gdown
 import os
 from torchvision import transforms
 
 # Конфигурация
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+MODEL_URL ="https://drive.google.com/uc?id=1_hywEaCjQ8gntsoRAd1ph2h8GcYvHIEg"
 MODEL_PATH = ("model1000.pth")
 IMAGE_FOLDER = "images"
 MASK_FOLDER = "masks"
