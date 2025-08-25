@@ -7,7 +7,13 @@
 
 Обучение на небольшом датасете из 50 снимков с google streetview, с применением аугментации до 1000 шт.
 
-
+![image](./docs/collage.jpg)
+![mask](./docs/collage1.jpg)
 
 
 ## Установка и запуск
+` pip install -r requirements.txt`
+
+`cd fastapi`
+
+` uvicorn app:app --reload`
