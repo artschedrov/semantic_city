@@ -10,6 +10,10 @@
 ![image](./docs/collage.jpg)
 ![mask](./docs/collage1.jpg)
 
+### Результаты
+Степень распознавания при 50 изображениях и разном размере аугментации:
+
+Полученные результаты метрик на тестовой выборке:
 
 ## Установка и запуск
 ` pip install -r requirements.txt`
@@ -17,3 +21,9 @@
 `cd fastapi`
 
 ` uvicorn app:app --reload`
+
+Изображения вычитываются из папки `fastapi/image`, распознанные маски выкладываются в папку `fastapi/mask`.
+
+Пример запуска распознования:
+
+`curl -i -X POST http://localhost:8000/process_images/`
