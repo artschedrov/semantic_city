@@ -16,6 +16,9 @@ MODEL_PATH = ("model1000.pth")
 IMAGE_FOLDER = "images"
 MASK_FOLDER = "masks"
 
+# Загрузка модели из Google Drive
+gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
+
 # Словарь для цветовой карты
 id2color = {
     0: (0, 0, 0),        # Фон
